@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*body {
+  font-family: JetBrainsMono;
+}*/
+
+/*@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}*/
+
+@layer base{body {
+
+    background-color: theme('colors.primary');
+    font-family: theme('fontFamily.primary');
+    color: white;
+    line-height: 1.6;
+  }
+}
+@layer utilities {
+  .my-custom-class {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: theme('colors.primary'); /* Use the primary color from your config */
+  }
+}
+
+
+/*@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}*/
